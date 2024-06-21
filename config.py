@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "7c50a4e525de5fcd9756fba209d0c4e4")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002239964738"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5019668523 6302921275"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5019668523"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI store private files for @MovieTimesTV.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5019668523").split()):
+    for x in (os.environ.get("ADMINS", "5019668523 6302921275").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
